@@ -40,3 +40,36 @@ The `/design` folder contains:
 
 - `TruAudit_Pro_Service_Layer.docx` — all REST endpoints with sample requests, responses, and error handling
 - `TruAudit_Pro_Database_Design.docx` — PostgreSQL schema, table descriptions, and relationships
+
+## Prerequisites
+- MSYS2 with MinGW64
+- CMake 3.15+
+- vcpkg
+- PostgreSQL 16+
+
+## Building the Project
+
+From the MSYS2 MinGW64 terminal:
+
+```bash
+mkdir build && cd build
+cmake .. -DCMAKE_TOOLCHAIN_FILE=/c/Users/yourname/vcpkg/scripts/buildsystems/vcpkg.cmake \
+         -DCMAKE_C_COMPILER=C:/msys64/mingw64/bin/gcc.exe \
+         -DCMAKE_CXX_COMPILER=C:/msys64/mingw64/bin/g++.exe \
+         -G "Ninja"
+ninja
+```
+
+## Running the Server
+
+```bash
+./build/truaudit_api.exe
+```
+
+Server runs on http://localhost:8080
+
+## Database Setup
+
+```bash
+psql -U postgres -d truaudit -f db/schema.sql
+```
