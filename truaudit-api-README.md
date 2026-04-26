@@ -27,11 +27,10 @@ This project sits between the React frontend (`truaudit-ui`) and the PostgreSQL 
 | GET | /departments | Fetch department list |
 
 ## Tech Stack
-
-- C++ with Crow (HTTP server)
+- Node.js with Express (HTTP server)
 - PostgreSQL (database)
-- libpqxx (database driver)
-- nlohmann/json (JSON parsing)
+- pg (PostgreSQL driver)
+- jsonwebtoken (JWT)
 - bcrypt (password hashing)
 
 ## Design Documents
