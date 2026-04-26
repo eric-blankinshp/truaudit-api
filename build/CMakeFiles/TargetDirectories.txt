@@ -1,3 +1,0 @@
-C:/Users/toonk/truaudit-api/build/CMakeFiles/truaudit_api.dir
-C:/Users/toonk/truaudit-api/build/CMakeFiles/edit_cache.dir
-C:/Users/toonk/truaudit-api/build/CMakeFiles/rebuild_cache.dir

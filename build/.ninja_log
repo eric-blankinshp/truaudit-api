@@ -1,5 +1,0 @@
-# ninja log v7
-5	475	7989208088437450	build.ninja	e2adbbcf6634ed9
-5	475	7989208088404173	C:/Users/toonk/truaudit-api/build/cmake_install.cmake	e2adbbcf6634ed9
-36	12770	7989206430289160	CMakeFiles/truaudit_api.dir/main.cpp.obj	3211b9e5e31d421
-76	7045	7989208092978794	truaudit_api.exe	923b148e470fce8e
