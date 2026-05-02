@@ -4,7 +4,7 @@ const pool = require('../db');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = 'truaudit_secret_key';
+const JWT_SECRET = process.env.JWT_SECRET || 'truaudit_secret_key';;
 
 router.post('/login', async (req, res) => {
   const { email, password } = req.body;
